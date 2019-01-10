@@ -263,23 +263,6 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-archives">
 
     
@@ -303,9 +286,6 @@
     
 
     
-    
-      
-      
     
       
       
@@ -652,6 +632,47 @@
 
 
   
+  
+    <!-- LOCAL: You can save these files to your site and update links -->
+
+  
+  <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+  <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+
+<!-- END LOCAL -->
+
+<style>
+#gitment-container a {
+  border-bottom: none;
+}
+
+</style>
+
+<script>
+  function renderGitment() {
+    var gitment = new Gitmint({
+      id: window.location.pathname,
+      owner: 'huiknagxu',
+      repo: 'huikangxu.github.io',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: '0620d38ba8b0e9522f0a1eba28d597ece51b9002',
+      
+        client_id: '4afb00bec9edf8fd8a8c'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
+</script>
+
   
 
 
